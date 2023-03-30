@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YeL-ha-C5S">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides dynamicTypePreference="0"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kTV-9N-vMr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uZ1-Oj-XIH" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="GLJ-9Q-T6i"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qeL-Mh-u3c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lPb-Qv-YkQ" kind="relationship" relationship="viewControllers" id="J2o-VE-aQc"/>
+                        <segue destination="9lG-pK-179" kind="relationship" relationship="viewControllers" id="bMX-61-kOt"/>
+                        <segue destination="uM2-SR-frk" kind="relationship" relationship="viewControllers" id="8s4-Y2-5vT"/>
+                        <segue destination="MTh-Rf-WHP" kind="relationship" relationship="viewControllers" id="wPB-Mt-85B"/>
+                        <segue destination="rKV-Bz-c93" kind="relationship" relationship="viewControllers" id="ByS-Vy-DrN"/>
+                        <segue destination="Ymc-rd-5KM" kind="relationship" relationship="viewControllers" id="j83-Ii-OqP"/>
+                        <segue destination="yqe-J1-cV3" kind="relationship" relationship="viewControllers" id="OZx-SE-y5y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KNb-LK-g3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-985"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mfd-rI-B1Q">
+            <objects>
+                <navigationController id="YeL-ha-C5S" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a4v-GJ-1MQ">
+                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hez-nw-6sX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5c-nB-ea7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3978" y="-986"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainmenu" id="BYZ-38-t0r" customClass="ViewController" customModule="Chimica_Saronio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ViewControllerTexturebgd" translatesAutoresizingMaskIntoConstraints="NO" id="7ir-YV-ieW">
+                                <rect key="frame" x="15" y="138" width="345" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ICMImage" translatesAutoresizingMaskIntoConstraints="NO" id="Lc9-ee-KD7">
+                                <rect key="frame" x="15" y="459" width="345" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc1-Nb-5lq">
+                                <rect key="frame" x="33" y="237" width="308" height="84.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Il Centro Chimico Militare">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88104059278350522" green="0.80278076771540563" blue="0.55358104492956994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="34" name="AmericanTypewriter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0">
+                                                <lineBreakStrategy key="lineBreakStrategy" pushOut="YES"/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-XN-pPQ">
+                                <rect key="frame" x="42" y="558" width="290" height="84.666666666666629"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="La  fabbrica di Melegnano">
+                                        <attributes>
+                                            <color key="NSColor" red="0.7278710008" green="0.37079977990000001" blue="0.18667906519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="34" name="AmericanTypewriter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0">
+                                                <lineBreakStrategy key="lineBreakStrategy" pushOut="YES"/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Annuncio Pubblicitario" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-jj-yAP">
+                                <rect key="frame" x="15" y="35" width="345" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ei-sU-ToV">
+                                <rect key="frame" x="291" y="696" width="51" height="34.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.right.fill" catalog="system">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="DoZ-4k-qCY" kind="push" id="m4x-Rh-fyl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGe-aG-Ozj">
+                                <rect key="frame" x="320" y="760" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my2-K6-omE">
+                                <rect key="frame" x="291" y="760" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXC-bs-xMT">
+                                <rect key="frame" x="15" y="138" width="345" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <color key="baseBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="uZ1-Oj-XIH" kind="push" id="uFR-ro-C4B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fFA-jN-S5S"/>
+                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="blN-Jm-z2S"/>
+                    <navigationItem key="navigationItem" id="zrE-dE-MWs">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="bmD-kK-qVm"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ccmbutton" destination="gXC-bs-xMT" id="jaU-kB-fds"/>
+                        <outlet property="icmbutton" destination="5ei-sU-ToV" id="Dm1-Cw-6En"/>
+                        <outlet property="versionlabel" destination="XGe-aG-Ozj" id="QdF-Db-arY"/>
+                        <outlet property="vlabel" destination="my2-K6-omE" id="fED-MA-Cs0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3090.4000000000001" y="-986.45320197044339"/>
+        </scene>
+        <!--Sostanze Prodotte-->
+        <scene sceneID="dQU-bX-m9a">
+            <objects>
+                <viewController title="Sostanze Prodotte" id="uM2-SR-frk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KNK-Md-rzy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="M1V-3V-AlT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SOSTANZE PRODOTTE" image="thermometer.and.liquid.waves" catalog="system" id="ICH-l9-p5z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTe-b6-JeF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="-239"/>
+        </scene>
+        <!--FOTO-->
+        <scene sceneID="s5T-gH-Hm5">
+            <objects>
+                <viewController id="MTh-Rf-WHP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lJh-fe-Cjv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ggm-dS-7av"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="FOTO" id="GdK-hv-lLy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kz-5C-KBK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553" y="-239"/>
+        </scene>
+        <!--CCM-->
+        <scene sceneID="Klj-Bo-fQD">
+            <objects>
+                <viewController title="CCM" id="lPb-Qv-YkQ" customClass="ccmViewController" customModule="Chimica_Saronio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sQg-P5-mEq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ccmiconimage" translatesAutoresizingMaskIntoConstraints="NO" id="Dq8-fh-Uey">
+                                <rect key="frame" x="0.0" y="94" width="375" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYA-SX-ieV">
+                                <rect key="frame" x="16" y="235" width="343" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Nel 1941 Saronio costruisce un nuovo stabilimento sul territorio di Riozzo. La fabbrica copre un’area di circa 45.000 metri quadri delimitata da un muro di cinta, è collegata alla fabbrica di Melegnano dal raccordo ferroviario parallelo alla strada per Sant'Angelo e ha un’unica strada di accesso che parte in modo perpendicolare da quest’ultima.</string>
+                                        <attributes>
+                                            <real key="NSBaselineOffset" value="0.5"/>
+                                            <font key="NSFont" size="15.699999999999999" name="AmericanTypewriter-Condensed"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdE-u4-Xag">
+                                <rect key="frame" x="16" y="394" width="343" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Dopo essere stato chiuso una prima volta durante la ritirata tedesca, viene riaperto nel dopoguerra e riaffidato a Piero Saronio. Una volta riaperto rimarrà in funzione fino al 1958, da allora lo stabilimento ha subito una prima bonifica intorno agli anni 70 e la demolizione di alcuni edifici (Due edifici del numero 21, tutti e tre i 22 e probabilmente anche il 9, 18, 19 e 20 per essere poi destinato alle esercitazioni militari fino al 1993. Lo stato di totale abbandono e la manutenzione inesistente da parte del demanio ha comportato negli anni la crescita di una folta vegetazione, che conseguentemente ha compromesso lo stato degli edifici e di alcuni addirittura il crollo. Fortunatamente nel 2016 alcuni edifici sono stati posti sotto vincolo paesaggistico.</mutableString>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.92941176889999999" green="0.92156863209999995" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSBaselineOffset" value="1.4249999523162842"/>
+                                            <font key="NSFont" size="16" name="AmericanTypewriter-Condensed"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cUB-Yo-Cn8"/>
+                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="STORIA" image="fossil.shell" catalog="system" id="vt4-BL-DqZ"/>
+                    <navigationItem key="navigationItem" title="IL C.C.M. DI RIOZZO" largeTitleDisplayMode="always" id="pla-mm-zB5">
+                        <barButtonItem key="backBarButtonItem" title="CCM" id="3LK-xt-oK0"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gb7-Mg-Bgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="-239"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="K4v-pV-ZS6">
+            <objects>
+                <tabBarController id="DoZ-4k-qCY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="s9w-jK-gUy"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zQt-D1-gFa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ped-WD-T9I" kind="relationship" relationship="viewControllers" id="IsK-e0-bAX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amG-Ag-Iu1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3044" y="-244"/>
+        </scene>
+        <!--PLANIMETRIA DEL C.C.M.-->
+        <scene sceneID="v5H-SF-4QC">
+            <objects>
+                <viewController id="9lG-pK-179" customClass="Map" customModule="Chimica_Saronio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7YN-aV-tLr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="6" translatesAutoresizingMaskIntoConstraints="NO" id="HpD-wY-aJk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="mapparotate" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1I6-69-qX9">
+                                        <rect key="frame" x="0.0" y="0.0" width="367" height="627"/>
+                                        <gestureRecognizers/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="LIe-fg-rcj" appends="YES" id="Rzt-R9-BhG"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1I6-69-qX9" firstAttribute="leading" secondItem="HpD-wY-aJk" secondAttribute="leading" id="39J-ix-Iki"/>
+                                    <constraint firstItem="1I6-69-qX9" firstAttribute="bottom" secondItem="HpD-wY-aJk" secondAttribute="bottomMargin" id="3W7-Ou-Tmp"/>
+                                    <constraint firstItem="Y5Q-bI-aCc" firstAttribute="bottom" secondItem="1I6-69-qX9" secondAttribute="bottom" constant="91" id="H3I-p9-NqJ"/>
+                                    <constraint firstItem="Y5Q-bI-aCc" firstAttribute="trailing" secondItem="1I6-69-qX9" secondAttribute="trailing" constant="8" id="OVw-J0-Qxt"/>
+                                    <constraint firstItem="1I6-69-qX9" firstAttribute="top" secondItem="yYo-4c-tQ3" secondAttribute="top" id="kAD-Ps-LZQ"/>
+                                    <constraint firstItem="1I6-69-qX9" firstAttribute="trailing" secondItem="HpD-wY-aJk" secondAttribute="trailingMargin" id="uij-cJ-Os7"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="yYo-4c-tQ3"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Y5Q-bI-aCc"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cEg-nh-iNW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HpD-wY-aJk" secondAttribute="trailing" id="Cw7-RO-gSh"/>
+                            <constraint firstAttribute="bottom" secondItem="HpD-wY-aJk" secondAttribute="bottom" id="MJg-n0-0hf"/>
+                            <constraint firstItem="HpD-wY-aJk" firstAttribute="leading" secondItem="7YN-aV-tLr" secondAttribute="leading" id="MVj-rl-xYY"/>
+                            <constraint firstItem="HpD-wY-aJk" firstAttribute="top" secondItem="7YN-aV-tLr" secondAttribute="top" id="wI3-pH-O3q"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MAPPA" image="mappin.circle.fill" catalog="system" id="adm-W3-hYM"/>
+                    <navigationItem key="navigationItem" title="PLANIMETRIA DEL C.C.M." id="8Mw-kO-gqE">
+                        <barButtonItem key="backBarButtonItem" title="A" id="cfz-NR-rWe"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapimage" destination="1I6-69-qX9" id="vpm-yW-rqP"/>
+                        <outlet property="scrollview" destination="HpD-wY-aJk" id="TjW-ev-d6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gog-6P-avu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="LIe-fg-rcj"/>
+            </objects>
+            <point key="canvasLocation" x="1008.8" y="-986.45320197044339"/>
+        </scene>
+        <!--CCM ED-->
+        <scene sceneID="LWk-Lh-y7B">
+            <objects>
+                <tableViewController storyboardIdentifier="ccmedifici" autoresizesArchivedViewToFullSize="NO" title="CCM ED" modalPresentationStyle="overFullScreen" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rKV-Bz-c93" sceneMemberID="viewController">
+                    <tableView key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="y1Y-U8-keD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Impianto D.C.A. ( I^ e II^ Fase)" id="zVY-Tr-WmP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="214" id="ZWs-g0-u1m">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="214"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZWs-g0-u1m" id="lxS-kT-s4s">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed1img" translatesAutoresizingMaskIntoConstraints="NO" id="9CZ-lp-ZM5">
+                                                    <rect key="frame" x="20" y="11" width="335" height="192"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="169" id="ZNA-ja-y8g">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZNA-ja-y8g" id="him-sW-wNN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQ9-3v-udi">
+                                                    <rect key="frame" x="20" y="11" width="335" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Il primo edificio conteneva gli impianti riguardanti la prima e la seconda fase di produzione della D.C.A. Esso era composto da una grande sala, al cui interno vi erano due piattaforme di cemento e da un lungo porticato.</string>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="D.C.A. Distillazione" id="CBh-6w-pXJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="258" id="0AH-DD-ZtV">
+                                        <rect key="frame" x="0.0" y="511" width="375" height="258"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0AH-DD-ZtV" id="1a3-4f-Mdd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planimetria ed 16" translatesAutoresizingMaskIntoConstraints="NO" id="zMm-Fm-JTY">
+                                                    <rect key="frame" x="20" y="11" width="335" height="233"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="169" id="ZnE-vS-l1R">
+                                        <rect key="frame" x="0.0" y="769" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZnE-vS-l1R" id="UFl-6g-8SZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="169"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFg-26-X2s">
+                                                    <rect key="frame" x="20" y="11" width="335" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">L’edficio numero 16 era adibito alla distillazione della D.C.A. Questo processo era svolto mediante macchinari appositamente progettati dagli ingenieri data la corrosività del prodotto.​</string>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="D.C.A. Depurazione" id="wDn-rM-1cT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="214" id="tq3-KK-YBs">
+                                        <rect key="frame" x="0.0" y="1016" width="375" height="214"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tq3-KK-YBs" id="lK0-Ab-ZW2">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="214"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planimetria ed17" translatesAutoresizingMaskIntoConstraints="NO" id="8jv-XB-hCU">
+                                                    <rect key="frame" x="20" y="11" width="335" height="214"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="169" id="3Df-8e-0Gq">
+                                        <rect key="frame" x="0.0" y="1230" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Df-8e-0Gq" id="cjR-B0-k61">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="169"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hj-r0-3sx">
+                                                    <rect key="frame" x="20" y="11" width="335" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Il 17 aveva lo scopo di depurare la D.C.A. ed era costituito da due grosse vasche di bonifica ed un edificio al cui interno si trovava un impianto di depurazione dell’acqua.</string>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Produzione D.C.A. magazzino M.C." id="3xZ-an-gaB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="214" id="lF2-4N-Mfv">
+                                        <rect key="frame" x="0.0" y="1477" width="375" height="214"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lF2-4N-Mfv" id="Lvk-2q-UkZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="214"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed1img" translatesAutoresizingMaskIntoConstraints="NO" id="gqn-sC-SZV">
+                                                    <rect key="frame" x="20" y="11" width="335" height="192"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="169" id="Iaw-sv-HJK">
+                                        <rect key="frame" x="0.0" y="1691" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iaw-sv-HJK" id="k4m-gV-2Hw">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="169"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snj-At-eHP">
+                                                    <rect key="frame" x="20" y="11" width="335" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Il primo edificio conteneva gli impianti riguardanti la prima e la seconda fase di produzione della D.C.A. Esso era composto da una grande sala, al cui interno vi erano due piattaforme di cemento e da un lungo porticato.</string>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="rKV-Bz-c93" id="oRK-Nm-WuS"/>
+                            <outlet property="delegate" destination="rKV-Bz-c93" id="Nnr-IL-Rhp"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="D.C.A." landscapeImage="letter-d" springLoaded="YES" id="9eK-d7-QuI">
+                        <imageReference key="image" image="d.square.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Produzione D.C.A." id="06G-wc-qJr"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="byd-Rv-6nt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkM-xx-Lef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2433" y="-239"/>
+        </scene>
+        <!--ICM-->
+        <scene sceneID="zNP-av-mOX">
+            <objects>
+                <viewController storyboardIdentifier="icmhome" title="ICM" id="ped-WD-T9I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qAj-oc-sfv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLL-gK-j63">
+                                <rect key="frame" x="10" y="253" width="355" height="474"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">La storia dell’Industria Chimica Saronio inizia nel 1926, quando il dottor Piero Saronio, laureatosi in Chimica pura all'Università di Pavia nel 1911, acquista uno stabile situato lungo la via per Carpiano, appartenente alla  Latteria di Locate Triulzi. Proprio qui sorge il primo nucleo della sua industria chimica di coloranti: Saronio vi si stabilisce all'interno con un gruppo di collaboratori. Successivamente in tutta l’area circostante cominciano a sorgere i fabbricati produttivi e i laboratori.</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="20" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2286" translatesAutoresizingMaskIntoConstraints="NO" id="lO2-kw-Lsu">
+                                <rect key="frame" x="0.0" y="100" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="pyF-1P-uKN"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R2y-Di-WOw"/>
+                        <color key="backgroundColor" red="0.84920586340000004" green="0.48609781629999999" blue="0.35364657820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R2y-Di-WOw" firstAttribute="trailing" secondItem="fLL-gK-j63" secondAttribute="trailing" constant="10" id="1Fb-8y-4hf"/>
+                            <constraint firstItem="lO2-kw-Lsu" firstAttribute="leading" secondItem="R2y-Di-WOw" secondAttribute="leading" id="2Ij-E9-DHK"/>
+                            <constraint firstItem="fLL-gK-j63" firstAttribute="leading" secondItem="R2y-Di-WOw" secondAttribute="leading" constant="10" id="Gpf-NC-uAJ"/>
+                            <constraint firstItem="lO2-kw-Lsu" firstAttribute="top" secondItem="qAj-oc-sfv" secondAttribute="top" constant="100" id="SgM-oG-geR"/>
+                            <constraint firstAttribute="bottom" secondItem="fLL-gK-j63" secondAttribute="bottom" constant="85" id="XHB-6A-8bE"/>
+                            <constraint firstItem="fLL-gK-j63" firstAttribute="top" secondItem="lO2-kw-Lsu" secondAttribute="bottom" constant="3" id="bbO-tT-HLn"/>
+                            <constraint firstItem="lO2-kw-Lsu" firstAttribute="trailing" secondItem="R2y-Di-WOw" secondAttribute="trailing" id="mq9-25-Rsi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="I.C.M." id="C3A-8k-Yti"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="LA I.C.M. DI MELEGNANO" largeTitleDisplayMode="always" id="IOs-Po-Zfm">
+                        <barButtonItem key="backBarButtonItem" enabled="NO" id="OkE-fZ-IJa"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNK-lj-Znx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2140" y="-245"/>
+        </scene>
+        <!--Servizi-->
+        <scene sceneID="3tf-00-V3O">
+            <objects>
+                <tableViewController storyboardIdentifier="ccmservizi" autoresizesArchivedViewToFullSize="NO" title="Servizi" modalPresentationStyle="overFullScreen" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yqe-J1-cV3" sceneMemberID="viewController">
+                    <tableView key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="pVg-YV-Rbt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="1) Impianto D.C.A. ( I^ e II^ Fase)" id="t0f-4m-VOr">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="214" id="Iae-0c-X1A">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="214"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iae-0c-X1A" id="oZK-Tf-be1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed1img" translatesAutoresizingMaskIntoConstraints="NO" id="oNO-vB-o1b">
+                                                    <rect key="frame" x="20" y="11" width="335" height="192"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="169" id="Oyq-yp-UBD">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oyq-yp-UBD" id="VMf-BA-EOu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP8-9y-lOC">
+                                                    <rect key="frame" x="20" y="11" width="335" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Il primo edificio conteneva gli impianti riguardanti la prima e la seconda fase di produzione della D.C.A. Esso era composto da una grande sala, al cui interno vi erano due piattaforme di cemento e da un lungo porticato.</string>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="2) Refettorio e spaccio" id="Eif-H3-qdp">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="262" id="ZiA-Rm-h18">
+                                        <rect key="frame" x="0.0" y="511" width="375" height="262"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZiA-Rm-h18" id="VuK-I4-oFb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed2img" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-E3-6W9">
+                                                    <rect key="frame" x="20" y="11" width="335" height="232"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="108" id="oBt-Nx-rKl">
+                                        <rect key="frame" x="0.0" y="773" width="375" height="108"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oBt-Nx-rKl" id="w7x-fo-0pR">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nel secondo edificio si trovavano il refettorio e lo spaccio dei viveri" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXX-w1-2MB">
+                                                    <rect key="frame" x="8" y="26" width="359" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="2 II) Sala Convegni Operai" id="9lD-dJ-4vV">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="262" id="Qex-Q4-o2i">
+                                        <rect key="frame" x="0.0" y="959" width="375" height="262"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qex-Q4-o2i" id="BZB-bE-Psh">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="262"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed2_I" translatesAutoresizingMaskIntoConstraints="NO" id="m8q-mh-60P">
+                                                    <rect key="frame" x="20" y="11" width="335" height="232"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="108" id="8Dq-Wi-oj2">
+                                        <rect key="frame" x="0.0" y="1221" width="375" height="108"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Dq-Wi-oj2" id="w8d-so-dtd">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All’ esterno della fabbrica era presente un edificio per permettere agli operai di svolgere i convegni." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYl-7V-1I0">
+                                                    <rect key="frame" x="8" y="26" width="359" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="2 III&amp;IV) Spogliatoio e Bagni" id="zke-4W-gbx">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="244" id="9ez-ci-u9T">
+                                        <rect key="frame" x="0.0" y="1407" width="375" height="244"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9ez-ci-u9T" id="dU5-SU-Vjv">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="244"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed2_IIIV" translatesAutoresizingMaskIntoConstraints="NO" id="a6E-t7-hoi">
+                                                    <rect key="frame" x="20" y="11" width="335" height="203"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="90" id="XU5-qu-yT5">
+                                        <rect key="frame" x="0.0" y="1651" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XU5-qu-yT5" id="Kqx-C8-Imx">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La fabbrica era dotata di due edifici spogliatoi e doccie per gli operai." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdR-o1-tbk">
+                                                    <rect key="frame" x="8" y="26" width="359" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="2 V) Portineria" id="l7Q-7l-MHb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="262" id="Cpg-NJ-QbD">
+                                        <rect key="frame" x="0.0" y="1819" width="375" height="262"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cpg-NJ-QbD" id="yvy-kn-wHP">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="262"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="portineria" translatesAutoresizingMaskIntoConstraints="NO" id="1XH-bA-AhW">
+                                                    <rect key="frame" x="20" y="11" width="335" height="232"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="223" id="ew2-m7-MlF">
+                                        <rect key="frame" x="0.0" y="2081" width="375" height="223"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ew2-m7-MlF" id="fHB-DX-Jub">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="223"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="L’ingresso alla fabbrica era effettuato passando dalla portineria, costituita da due piani." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9X-Jp-RCv">
+                                                    <rect key="frame" x="8" y="26" width="359" height="189"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="yqe-J1-cV3" id="wgZ-tS-GMF"/>
+                            <outlet property="delegate" destination="yqe-J1-cV3" id="Br3-T1-aHY"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="D.F." image="gauge.high" catalog="system" landscapeImage="letter-c" id="mKV-LG-OqQ"/>
+                    <navigationItem key="navigationItem" id="pJj-gF-PZo"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="2Sr-EY-6u4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luV-fB-u62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3198" y="-239"/>
+        </scene>
+        <!--Servizi-->
+        <scene sceneID="XrX-Dk-AVH">
+            <objects>
+                <tableViewController storyboardIdentifier="ccmproduzionep" autoresizesArchivedViewToFullSize="NO" title="Servizi" modalPresentationStyle="overFullScreen" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ymc-rd-5KM" sceneMemberID="viewController">
+                    <tableView key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="rph-5t-1U7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="1) Impianto D.C.A. ( I^ e II^ Fase)" id="hwV-KX-o83">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="214" id="j8P-qI-wRr">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="214"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j8P-qI-wRr" id="V2q-HU-6gr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed1img" translatesAutoresizingMaskIntoConstraints="NO" id="4YF-qT-QtF">
+                                                    <rect key="frame" x="20" y="11" width="335" height="192"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="169" id="bvQ-2w-qms">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="169"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bvQ-2w-qms" id="g2e-Dp-suB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax8-ZV-NaM">
+                                                    <rect key="frame" x="20" y="11" width="335" height="151"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Il primo edificio conteneva gli impianti riguardanti la prima e la seconda fase di produzione della D.C.A. Esso era composto da una grande sala, al cui interno vi erano due piattaforme di cemento e da un lungo porticato.</string>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="2) Refettorio e spaccio" id="DsR-MY-nU8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="262" id="U2n-ca-n6f">
+                                        <rect key="frame" x="0.0" y="511" width="375" height="262"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U2n-ca-n6f" id="Yzq-iX-cCH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed2img" translatesAutoresizingMaskIntoConstraints="NO" id="JOR-a7-zX4">
+                                                    <rect key="frame" x="20" y="11" width="335" height="232"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="108" id="F7o-4S-MTH">
+                                        <rect key="frame" x="0.0" y="773" width="375" height="108"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F7o-4S-MTH" id="Jbz-77-Q5M">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nel secondo edificio si trovavano il refettorio e lo spaccio dei viveri" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHv-N9-fRw">
+                                                    <rect key="frame" x="8" y="26" width="359" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="2 II) Sala Convegni Operai" id="f3n-sG-ZaX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="262" id="dTn-Ek-fRh">
+                                        <rect key="frame" x="0.0" y="959" width="375" height="262"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dTn-Ek-fRh" id="qhc-S7-M6r">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="262"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed2_I" translatesAutoresizingMaskIntoConstraints="NO" id="OOY-He-TE8">
+                                                    <rect key="frame" x="20" y="11" width="335" height="232"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="108" id="rSe-DF-z7z">
+                                        <rect key="frame" x="0.0" y="1221" width="375" height="108"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rSe-DF-z7z" id="tvS-Lr-Hp3">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All’ esterno della fabbrica era presente un edificio per permettere agli operai di svolgere i convegni." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5x7-Ry-vIt">
+                                                    <rect key="frame" x="8" y="26" width="359" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="2 III&amp;IV) Spogliatoio e Bagni" id="WNu-XW-HqG">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="244" id="LXD-JA-8pp">
+                                        <rect key="frame" x="0.0" y="1407" width="375" height="244"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LXD-JA-8pp" id="9SY-eZ-bRa">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="244"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ed2_IIIV" translatesAutoresizingMaskIntoConstraints="NO" id="PWq-He-0dO">
+                                                    <rect key="frame" x="20" y="11" width="335" height="203"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="90" id="Fjc-BU-Zaf">
+                                        <rect key="frame" x="0.0" y="1651" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fjc-BU-Zaf" id="vFR-zZ-BWU">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La fabbrica era dotata di due edifici spogliatoi e doccie per gli operai." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szl-8s-pjt">
+                                                    <rect key="frame" x="8" y="26" width="359" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="2 V) Portineria" id="aV0-zu-l32">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="262" id="5wx-Pl-IMu">
+                                        <rect key="frame" x="0.0" y="1819" width="375" height="262"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5wx-Pl-IMu" id="RiD-Bz-JcB">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="262"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="portineria" translatesAutoresizingMaskIntoConstraints="NO" id="IhN-Bh-9fT">
+                                                    <rect key="frame" x="20" y="11" width="335" height="232"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="223" id="WQP-Ob-cn7">
+                                        <rect key="frame" x="0.0" y="2081" width="375" height="223"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WQP-Ob-cn7" id="nwy-Xu-t7X">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="223"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="L’ingresso alla fabbrica era effettuato passando dalla portineria, costituita da due piani." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8v-Gw-ZZj">
+                                                    <rect key="frame" x="8" y="26" width="359" height="189"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.51800148800000001" blue="0.2732213295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.93531984089999998" blue="0.81711316109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Ymc-rd-5KM" id="gpN-Z2-blX"/>
+                            <outlet property="delegate" destination="Ymc-rd-5KM" id="17e-lO-pZS"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="P" image="arrow.triangle.turn.up.right.diamond.fill" catalog="system" landscapeImage="letter-p" id="PRO-I8-Fh0"/>
+                    <navigationItem key="navigationItem" title="PRODUZIONE P" id="vXU-HO-xPd"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="HEL-JA-Ksk">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T6U-Uk-tNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3977" y="-239"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Annuncio Pubblicitario" width="546" height="95"/>
+        <image name="ICMImage" width="4032" height="2268"/>
+        <image name="IMG_2286" width="3523" height="1576"/>
+        <image name="ViewControllerTexturebgd" width="889" height="851"/>
+        <image name="arrow.triangle.turn.up.right.diamond.fill" catalog="system" width="128" height="124"/>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <image name="ccmiconimage" width="3848" height="1620"/>
+        <image name="d.square.fill" catalog="system" width="128" height="114"/>
+        <image name="ed1img" width="4032" height="3024"/>
+        <image name="ed2_I" width="4618" height="3464"/>
+        <image name="ed2_IIIV" width="4618" height="3464"/>
+        <image name="ed2img" width="3968" height="2976"/>
+        <image name="fossil.shell" catalog="system" width="128" height="100"/>
+        <image name="gauge.high" catalog="system" width="128" height="123"/>
+        <image name="letter-c" width="32" height="32"/>
+        <image name="letter-d" width="32" height="32"/>
+        <image name="letter-p" width="32" height="32"/>
+        <image name="mapparotate" width="1330" height="1681"/>
+        <image name="mappin.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="planimetria ed 16" width="1346" height="960"/>
+        <image name="planimetria ed17" width="1440" height="934"/>
+        <image name="portineria" width="2048" height="1536"/>
+        <image name="thermometer.and.liquid.waves" catalog="system" width="128" height="124"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
