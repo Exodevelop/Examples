@@ -1,0 +1,3 @@
+﻿  CPPCalculatorConsole.cpp
+C:\Users\flavi\Documents\Visual Studio 2022\GitHubProjects\CPPCalculatorConsole\CPPCalculatorConsole.cpp(47): warning C4715: 'Operazione::Divisione': non tutti i percorsi di controllo restituiscono un valore
+  CPPCalculatorConsole.vcxproj -> C:\Users\flavi\Documents\Visual Studio 2022\GitHubProjects\CPPCalculatorConsole\x64\Debug\CPPCalculatorConsole.exe
