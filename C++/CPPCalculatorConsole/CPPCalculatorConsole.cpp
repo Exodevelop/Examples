@@ -17,22 +17,22 @@ class Operazione /* CLASS OPERAZIONE DECLARATION*/
         float Divisione(float n1, float n2);
 };
 
-float Operazione::Somma(float n1, float n2) /*SUM FUNCTION*/
+float Operazione::Somma(float n1, float n2) /* SUM */
 {
     return n1 + n2;
 };
 
-float Operazione::Sottrazione(float n1, float n2) /*SUBTRACT FUNCTION*/
+float Operazione::Sottrazione(float n1, float n2) /* SUBTRACT */
 {
     return n1 - n2;
 };
 
-float Operazione::Moltiplicazione(float n1, float n2) /*MULTIPLY FUNCTION*/
+float Operazione::Moltiplicazione(float n1, float n2) /* MULTIPLY */
 {
     return n1 * n2;
 };
 
-float Operazione::Divisione(float n1, float n2) /*DIVIDE FUNCTION*/
+float Operazione::Divisione(float n1, float n2) /* DIVIDE */
 {
   
     if (n2 == 0)
@@ -41,10 +41,13 @@ float Operazione::Divisione(float n1, float n2) /*DIVIDE FUNCTION*/
         
     }
     else
+
     {
-        return n1 / n2;
+        int res = n1 / n2;
+        return res;
     }
 };
+
 
 
 
