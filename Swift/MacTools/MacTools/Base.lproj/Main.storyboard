@@ -99,7 +99,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="vYa-0P-kdp">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="vYa-0P-kdp">
                                 <rect key="frame" x="6" y="73" width="155" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Latest Version Available :" id="VpT-UV-4av">
@@ -108,7 +108,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="UaZ-Xb-PWi">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="UaZ-Xb-PWi">
                                 <rect key="frame" x="256" y="73" width="44" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="ver ?.?" id="9RZ-0i-XZy">
@@ -172,7 +172,7 @@
                                             <rect key="frame" x="10" y="33" width="564" height="665"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="SEC-mV-F9A">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="SEC-mV-F9A">
                                                     <rect key="frame" x="15" y="468" width="534" height="156"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" id="oaa-1h-9VM">
@@ -187,7 +187,7 @@ Wineskin Winery is a user-friendly tool that creates macOS-compatible wrappers f
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="3zA-bb-A0H">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="3zA-bb-A0H">
                                                     <rect key="frame" x="15" y="197" width="534" height="171"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" id="AFw-Kv-tBS">
@@ -200,7 +200,7 @@ Both methods provide a way to enjoy Windows software on macOS, with Wineskin foc
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="NcN-lS-qTr">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="NcN-lS-qTr">
                                                     <rect key="frame" x="15" y="632" width="351" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="How to port games on MacOs ?" id="8y3-M4-WIQ">
@@ -238,7 +238,7 @@ AQAAAAAAAAAxAAAAAAAAAAAAAAAAAAABdw
                                                         <segue destination="zao-7s-e0a" kind="modal" id="Zhd-7I-iI8"/>
                                                     </connections>
                                                 </button>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="i9f-E6-1G7">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="i9f-E6-1G7">
                                                     <rect key="frame" x="15" y="417" width="103" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Wineskin" id="c4D-cR-t6O">
@@ -247,7 +247,7 @@ AQAAAAAAAAAxAAAAAAAAAAAAAAAAAAABdw
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="iwH-68-heH">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="iwH-68-heH">
                                                     <rect key="frame" x="15" y="135" width="252" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Game Porting ToolKit" id="QFe-Na-ZKK">
@@ -293,7 +293,7 @@ AQAAAAAAAAAxAAAAAAAAAAAAAAAAAAABdw
                                             <rect key="frame" x="10" y="33" width="564" height="665"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wq6-SV-lpJ">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wq6-SV-lpJ">
                                                     <rect key="frame" x="15" y="111" width="529" height="480"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" id="UQY-X5-TyT">
@@ -333,7 +333,7 @@ Customize (Optional): Adjust screen settings, engine options, or other preferenc
                                                         </imageView>
                                                     </subviews>
                                                 </customView>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDf-Mg-r9n">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDf-Mg-r9n">
                                                     <rect key="frame" x="184" y="45" width="92" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Get Wineskin: " id="YJg-Ze-wjt">
@@ -378,7 +378,7 @@ AQAAAAAAAAAxAAAAAAAAAAAAAAAAAAABdw
                                             <rect key="frame" x="10" y="33" width="564" height="665"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="vtv-kQ-avX">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="vtv-kQ-avX">
                                                     <rect key="frame" x="15" y="118" width="529" height="512"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" id="7D4-IO-HSU">
@@ -408,7 +408,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="1gh-K8-SPp">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="1gh-K8-SPp">
                                                     <rect key="frame" x="107" y="638" width="351" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Game Porting Toolkit (Apple)" id="t4U-Kq-UT0">
@@ -425,7 +425,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                             <rect key="frame" x="10" y="33" width="564" height="665"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="k2e-8t-F5v">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="k2e-8t-F5v">
                                                     <rect key="frame" x="15" y="625" width="77" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="First Name :" id="3mf-Gy-g69">
@@ -434,7 +434,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="69C-XB-j1e">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="69C-XB-j1e">
                                                     <rect key="frame" x="15" y="588" width="76" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Last Name :" id="Ehz-co-Cdq">
@@ -443,7 +443,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" verticalHuggingPriority="750" id="hSf-nB-QDa">
+                                                <textField verticalHuggingPriority="750" id="hSf-nB-QDa">
                                                     <rect key="frame" x="111" y="622" width="96" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="k3x-vB-K7r">
@@ -452,7 +452,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" verticalHuggingPriority="750" id="cjd-ed-OUE">
+                                                <textField verticalHuggingPriority="750" id="cjd-ed-OUE">
                                                     <rect key="frame" x="111" y="583" width="96" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="jIL-Tw-DPm">
@@ -461,7 +461,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VcJ-qa-0r1">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VcJ-qa-0r1">
                                                     <rect key="frame" x="15" y="548" width="35" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Age :" id="oBt-F8-gcr">
@@ -470,7 +470,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <textField focusRingType="none" verticalHuggingPriority="750" id="Nnj-Q5-So5">
+                                                <textField verticalHuggingPriority="750" id="Nnj-Q5-So5">
                                                     <rect key="frame" x="111" y="543" width="96" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="W4J-Is-mu7">
@@ -523,7 +523,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                                         <action selector="Clearbtn:" target="XfG-lQ-9wD" id="EpW-la-eMB"/>
                                                     </connections>
                                                 </button>
-                                                <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="E5h-bu-jZj">
+                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="E5h-bu-jZj">
                                                     <rect key="frame" x="310" y="486" width="237" height="157"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="UhK-1Y-xP8">
@@ -578,7 +578,7 @@ Your Wineskin wrapper is now ready to use!</string>
                         <rect key="frame" x="0.0" y="0.0" width="327" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="poc-tg-B50">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="poc-tg-B50">
                                 <rect key="frame" x="18" y="119" width="121" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Versions Available :" id="uHE-c2-sPK">
@@ -587,7 +587,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="oSv-rp-TEA">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="oSv-rp-TEA">
                                 <rect key="frame" x="226" y="82" width="44" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="ver ?.?" id="av9-7Z-hNR">
@@ -611,7 +611,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                     <action selector="Downloadbtn:" target="RRt-RA-xTC" id="Rkc-90-1N4"/>
                                 </connections>
                             </button>
-                            <comboBox focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9g-rJ-hsy">
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9g-rJ-hsy">
                                 <rect key="frame" x="183" y="115" width="127" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" placeholderString="Select version" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="5" id="nOk-bT-PK5">
@@ -645,7 +645,7 @@ Your Wineskin wrapper is now ready to use!</string>
                         <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="T3f-eI-lcx">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="T3f-eI-lcx">
                                 <rect key="frame" x="6" y="73" width="155" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Latest Version Available :" id="u8Q-tc-f2Y">
@@ -654,7 +654,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9Cd-1O-uqb">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9Cd-1O-uqb">
                                 <rect key="frame" x="256" y="73" width="44" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="ver ?.?" id="Ph1-j1-b8n">
@@ -708,7 +708,7 @@ Your Wineskin wrapper is now ready to use!</string>
                         <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="jTG-nd-Pv6">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="jTG-nd-Pv6">
                                 <rect key="frame" x="6" y="73" width="155" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Latest Version Available :" id="fJo-3a-PfO">
@@ -717,7 +717,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="m04-Ob-trE">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="m04-Ob-trE">
                                 <rect key="frame" x="276" y="7" width="44" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="ver ?.?" id="ky3-IB-9Fh">
@@ -746,7 +746,7 @@ Your Wineskin wrapper is now ready to use!</string>
                                     <action selector="Downloadbtn:" target="bpV-8Y-EdF" id="hUg-ee-tCQ"/>
                                 </connections>
                             </button>
-                            <comboBox focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edx-kL-sZr">
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edx-kL-sZr">
                                 <rect key="frame" x="191" y="68" width="99" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="Yl4-Ap-fnl">
