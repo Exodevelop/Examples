@@ -1,0 +1,12 @@
+{
+  "colors" : [
+    {
+      "filename" : "Appicon.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="MacTools" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="MacTools" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About MacTools" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide MacTools" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit MacTools" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MacTools" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="-82"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES"/>
+                        <windowCollectionBehavior key="collectionBehavior" fullScreenNone="YES"/>
+                        <rect key="contentRect" x="396" y="310" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
+                        <value key="maxSize" type="size" width="480" height="270"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="je2-9p-ULZ"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="202"/>
+        </scene>
+        <!--Wineskin Winery-->
+        <scene sceneID="bb8-UB-fLc">
+            <objects>
+                <viewController title="Wineskin Winery" id="RRt-RA-xTC" customClass="WineskinController" customModule="MacTools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsToBounds="NO" wantsLayer="YES" id="QPs-BL-DRk">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="vYa-0P-kdp">
+                                <rect key="frame" x="6" y="73" width="155" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Latest Version Available :" id="VpT-UV-4av">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="UaZ-Xb-PWi">
+                                <rect key="frame" x="256" y="73" width="44" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="ver ?.?" id="9RZ-0i-XZy">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator fixedFrame="YES" maxValue="100" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="4QO-IW-Gzh">
+                                <rect key="frame" x="8" y="53" width="299" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rhu-Pz-2bJ">
+                                <rect key="frame" x="0.0" y="103" width="327" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Logo" id="mET-Iw-Hhf"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" id="GKC-EH-Nkq">
+                                <rect key="frame" x="87" y="13" width="153" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Download Wineskin" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KTL-AX-JBf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GKC-EH-Nkq" secondAttribute="height" multiplier="61:20" id="5Gf-eU-koE"/>
+                                    <constraint firstAttribute="width" secondItem="GKC-EH-Nkq" secondAttribute="height" multiplier="61:20" id="Ij0-5L-Eut"/>
+                                    <constraint firstAttribute="width" secondItem="GKC-EH-Nkq" secondAttribute="height" multiplier="61:20" id="Tlw-vG-yry"/>
+                                    <constraint firstAttribute="width" secondItem="GKC-EH-Nkq" secondAttribute="height" multiplier="61:20" id="xxV-Ax-zsL"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="Downloadbtn:" target="RRt-RA-xTC" id="ibg-EJ-7Oa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="Downloadbtn" destination="GKC-EH-Nkq" id="wwV-en-wDE"/>
+                        <outlet property="Pbar" destination="4QO-IW-Gzh" id="I9s-cp-nz7"/>
+                    </connections>
+                </viewController>
+                <customObject id="gKF-ab-WYt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="1468"/>
+        </scene>
+        <!--Main Tools-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController title="Main Tools" id="XfG-lQ-9wD" customClass="ViewController" customModule="MacTools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="601" height="736"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iki-b9-Pfi">
+                                <rect key="frame" x="13" y="11" width="584" height="711"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="Windows Games Porting" identifier="" id="JmC-yM-0QM">
+                                        <view key="view" id="Ibd-Ww-HEq">
+                                            <rect key="frame" x="10" y="33" width="564" height="665"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="SEC-mV-F9A">
+                                                    <rect key="frame" x="15" y="468" width="534" height="156"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" id="oaa-1h-9VM">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">To port Windows games and apps to macOS, two popular methods are **Wineskin Winery** and **Game Porting Toolkit**. Here's how they work:  
+
+1) Wineskin Winery  
+Wineskin Winery is a user-friendly tool that creates macOS-compatible wrappers for Windows software. It uses Wine, a compatibility layer that translates Windows system calls into macOS commands. Users configure a wrapper, install the Windows program, and launch it on macOS without emulation or a virtual machine. Wineskin is best for older or less demanding games, as compatibility can vary.  
+
+</string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="3zA-bb-A0H">
+                                                    <rect key="frame" x="15" y="197" width="534" height="171"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" id="AFw-Kv-tBS">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">2) Game Porting Toolkit  
+Apple's Game Porting Toolkit is a more advanced solution aimed at running modern DirectX 12 games on macOS. It relies on Metal, Apple’s graphics API, and Rosetta 2 for translating x86 instructions. This toolkit enables games to run efficiently by converting DirectX calls to Metal. It’s particularly effective for newer games but requires technical setup, making it better suited for developers or tech-savvy users.  
+
+Both methods provide a way to enjoy Windows software on macOS, with Wineskin focusing on simplicity and legacy support, while Game Porting Toolkit targets high-performance modern gaming.  </string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="NcN-lS-qTr">
+                                                    <rect key="frame" x="15" y="632" width="351" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="How to port games on MacOs ?" id="8y3-M4-WIQ">
+                                                        <font key="font" size="20" name="SFMono-BoldItalic"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verifyAmbiguity="off" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQR-iF-HX8">
+                                                    <rect key="frame" x="470" y="108" width="82" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <animations>
+                                                        <caTransition key="subviews">
+                                                            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
+S2V5ZWRBcmNoaXZlctEICVRyb290gAGrCwwVGRoiIw4PKSxVJG51bGzUDQ4PEBESExRWJGNsYXNzVmZp
+bHRlclR0eXBlXxASX19DQUNvZGluZ0NvbnRlbnRzgAqAAoAFgAbSFg0XGFxDSV9pbnB1dFRpbWWAA4AE
+IwAAAAAAAAAA0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc18QFENJRGlzc29sdmVUcmFuc2l0aW9uox8g
+IV8QFENJRGlzc29sdmVUcmFuc2l0aW9uWENJRmlsdGVyWE5TT2JqZWN0VGZhZGXSJA0lKFpOUy5vYmpl
+Y3RzoiYngAeACIAJ0hscKitXTlNBcnJheaIqIdIbHC0uXENBVHJhbnNpdGlvbqMvMCFcQ0FUcmFuc2l0
+aW9uW0NBQW5pbWF0aW9uAAgAEQAaACQAKQAyADcASQBMAFEAUwBfAGUAbgB1AHwAgQCWAJgAmgCcAJ4A
+owCwALIAtAC9AMIAzQDWAO0A8QEIAREBGgEfASQBLwEyATQBNgE4AT0BRQFIAU0BWgFeAWsAAAAAAAAC
+AQAAAAAAAAAxAAAAAAAAAAAAAAAAAAABdw
+</mutableData>
+                                                        </caTransition>
+                                                    </animations>
+                                                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="game-porting-toolkit-2-128x128_2x" imagePosition="overlaps" alignment="center" controlSize="large" borderStyle="border" imageScaling="axesIndependently" inset="2" id="kRM-aE-SjY">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <color key="bezelColor" red="0.4588235021" green="0.2352941036" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="contentTintColor" red="0.4588235021" green="0.2352941036" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <connections>
+                                                        <action selector="WineskinDownloadbtn:" target="XfG-lQ-9wD" id="rc0-bq-Wy9"/>
+                                                        <segue destination="zao-7s-e0a" kind="modal" id="Zhd-7I-iI8"/>
+                                                    </connections>
+                                                </button>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="i9f-E6-1G7">
+                                                    <rect key="frame" x="15" y="417" width="103" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Wineskin" id="c4D-cR-t6O">
+                                                        <font key="font" size="20" name="SFMono-BoldItalic"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="iwH-68-heH">
+                                                    <rect key="frame" x="15" y="135" width="252" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Game Porting ToolKit" id="QFe-Na-ZKK">
+                                                        <font key="font" size="20" name="SFMono-BoldItalic"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verifyAmbiguity="off" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UOB-Mn-BHf">
+                                                    <rect key="frame" x="470" y="390" width="82" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <animations>
+                                                        <caTransition key="subviews">
+                                                            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
+S2V5ZWRBcmNoaXZlctEICVRyb290gAGrCwwVGRoiIw4PKSxVJG51bGzUDQ4PEBESExRWJGNsYXNzVmZp
+bHRlclR0eXBlXxASX19DQUNvZGluZ0NvbnRlbnRzgAqAAoAFgAbSFg0XGFxDSV9pbnB1dFRpbWWAA4AE
+IwAAAAAAAAAA0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc18QFENJRGlzc29sdmVUcmFuc2l0aW9uox8g
+IV8QFENJRGlzc29sdmVUcmFuc2l0aW9uWENJRmlsdGVyWE5TT2JqZWN0VGZhZGXSJA0lKFpOUy5vYmpl
+Y3RzoiYngAeACIAJ0hscKitXTlNBcnJheaIqIdIbHC0uXENBVHJhbnNpdGlvbqMvMCFcQ0FUcmFuc2l0
+aW9uW0NBQW5pbWF0aW9uAAgAEQAaACQAKQAyADcASQBMAFEAUwBfAGUAbgB1AHwAgQCWAJgAmgCcAJ4A
+owCwALIAtAC9AMIAzQDWAO0A8QEIAREBGgEfASQBLwEyATQBNgE4AT0BRQFIAU0BWgFeAWsAAAAAAAAC
+AQAAAAAAAAAxAAAAAAAAAAAAAAAAAAABdw
+</mutableData>
+                                                        </caTransition>
+                                                    </animations>
+                                                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="Wine1" imagePosition="overlaps" alignment="center" controlSize="large" borderStyle="border" imageScaling="axesIndependently" inset="2" id="wZa-RT-62D">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <color key="bezelColor" red="0.4588235021" green="0.2352941036" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="contentTintColor" red="0.4588235021" green="0.2352941036" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <connections>
+                                                        <action selector="WineskinDownloadbtn:" target="XfG-lQ-9wD" id="YPR-Zw-wyq"/>
+                                                        <segue destination="RRt-RA-xTC" kind="modal" id="ba8-9l-dXE"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Wineskin" identifier="" id="l4E-Nb-sNG">
+                                        <view key="view" id="dbM-L3-cfY">
+                                            <rect key="frame" x="10" y="33" width="564" height="665"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wq6-SV-lpJ">
+                                                    <rect key="frame" x="15" y="111" width="529" height="480"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" id="UQY-X5-TyT">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">To create a wrapper with Wineskin, follow these steps:
+
+1. Download Wineskin Winery: Visit the Wineskin website and download the latest version of Wineskin Winery. Install it on your Mac.
+
+2. Install an Engine: Open Wineskin Winery and click the + button to add an engine. Select the latest version available, download it, and install it.
+
+3. Update Wrapper: Click the Update button to ensure you have the latest wrapper version installed.
+
+4. Create a New Wrapper: Click Create New Blank Wrapper. Give your wrapper a name (e.g., the name of the app or game). Wineskin will create the wrapper and notify you when it's ready.
+
+Locate the Wrapper: Once created, your wrapper will appear in the default location (typically ~/Applications/Wineskin). Open the wrapper by double-clicking it.
+
+Install Software: Click Install Software in the wrapper menu. Choose the method to install your program (e.g., run an .exe file or copy a program folder).
+
+Set Executable: After installation, configure the wrapper by selecting the correct executable file for the program to run. This is done in the Advanced section under the Tools tab.
+
+Test the Wrapper: Close the settings and double-click the wrapper to test if the program runs correctly. Troubleshoot settings if needed.
+
+Customize (Optional): Adjust screen settings, engine options, or other preferences in the Advanced section for optimal performance.</string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMQ-OZ-SGH">
+                                                    <rect key="frame" x="-3" y="599" width="570" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <subviews>
+                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hr6-Rc-bbU">
+                                                            <rect key="frame" x="0.0" y="8" width="570" height="48"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Logo" id="FDd-38-2zR"/>
+                                                            <color key="contentTintColor" red="0.4588235021" green="0.2352941036" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </customView>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDf-Mg-r9n">
+                                                    <rect key="frame" x="184" y="45" width="92" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Get Wineskin: " id="YJg-Ze-wjt">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verifyAmbiguity="off" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9p-Ne-JCl">
+                                                    <rect key="frame" x="293" y="14" width="82" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <animations>
+                                                        <caTransition key="subviews">
+                                                            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
+S2V5ZWRBcmNoaXZlctEICVRyb290gAGrCwwVGRoiIw4PKSxVJG51bGzUDQ4PEBESExRWJGNsYXNzVmZp
+bHRlclR0eXBlXxASX19DQUNvZGluZ0NvbnRlbnRzgAqAAoAFgAbSFg0XGFxDSV9pbnB1dFRpbWWAA4AE
+IwAAAAAAAAAA0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc18QFENJRGlzc29sdmVUcmFuc2l0aW9uox8g
+IV8QFENJRGlzc29sdmVUcmFuc2l0aW9uWENJRmlsdGVyWE5TT2JqZWN0VGZhZGXSJA0lKFpOUy5vYmpl
+Y3RzoiYngAeACIAJ0hscKitXTlNBcnJheaIqIdIbHC0uXENBVHJhbnNpdGlvbqMvMCFcQ0FUcmFuc2l0
+aW9uW0NBQW5pbWF0aW9uAAgAEQAaACQAKQAyADcASQBMAFEAUwBfAGUAbgB1AHwAgQCWAJgAmgCcAJ4A
+owCwALIAtAC9AMIAzQDWAO0A8QEIAREBGgEfASQBLwEyATQBNgE4AT0BRQFIAU0BWgFeAWsAAAAAAAAC
+AQAAAAAAAAAxAAAAAAAAAAAAAAAAAAABdw
+</mutableData>
+                                                        </caTransition>
+                                                    </animations>
+                                                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="Wine1" imagePosition="overlaps" alignment="center" controlSize="large" borderStyle="border" imageScaling="axesIndependently" inset="2" id="icL-yI-2q4">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <color key="bezelColor" red="0.4588235021" green="0.2352941036" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="contentTintColor" red="0.4588235021" green="0.2352941036" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <connections>
+                                                        <action selector="WineskinDownloadbtn:" target="XfG-lQ-9wD" id="jOO-IS-zle"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="GPTK" identifier="" id="jxv-Fi-3vg">
+                                        <view key="view" id="d4l-Uo-lkC">
+                                            <rect key="frame" x="10" y="33" width="564" height="665"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="vtv-kQ-avX">
+                                                    <rect key="frame" x="15" y="118" width="529" height="512"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" id="7D4-IO-HSU">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">To create a wrapper with Wineskin, follow these steps:
+
+1. Download Wineskin Winery: Visit the Wineskin website and download the latest version of Wineskin Winery. Install it on your Mac.
+
+2. Install an Engine: Open Wineskin Winery and click the + button to add an engine. Select the latest version available, download it, and install it.
+
+3. Update Wrapper: Click the Update button to ensure you have the latest wrapper version installed.
+
+4. Create a New Wrapper: Click Create New Blank Wrapper. Give your wrapper a name (e.g., the name of the app or game). Wineskin will create the wrapper and notify you when it's ready.
+
+Locate the Wrapper: Once created, your wrapper will appear in the default location (typically ~/Applications/Wineskin). Open the wrapper by double-clicking it.
+
+Install Software: Click Install Software in the wrapper menu. Choose the method to install your program (e.g., run an .exe file or copy a program folder).
+
+Set Executable: After installation, configure the wrapper by selecting the correct executable file for the program to run. This is done in the Advanced section under the Tools tab.
+
+Test the Wrapper: Close the settings and double-click the wrapper to test if the program runs correctly. Troubleshoot settings if needed.
+
+Customize (Optional): Adjust screen settings, engine options, or other preferences in the Advanced section for optimal performance.
+
+Your Wineskin wrapper is now ready to use!</string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="1gh-K8-SPp">
+                                                    <rect key="frame" x="107" y="638" width="351" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Game Porting Toolkit (Apple)" id="t4U-Kq-UT0">
+                                                        <font key="font" size="20" name="SFMono-BoldItalic"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Users" identifier="" id="E0o-6I-6XF">
+                                        <view key="view" id="lbO-JJ-iN4">
+                                            <rect key="frame" x="10" y="33" width="564" height="665"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="k2e-8t-F5v">
+                                                    <rect key="frame" x="15" y="625" width="77" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="First Name :" id="3mf-Gy-g69">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="69C-XB-j1e">
+                                                    <rect key="frame" x="15" y="588" width="76" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Last Name :" id="Ehz-co-Cdq">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" verticalHuggingPriority="750" id="hSf-nB-QDa">
+                                                    <rect key="frame" x="111" y="622" width="96" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="k3x-vB-K7r">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" verticalHuggingPriority="750" id="cjd-ed-OUE">
+                                                    <rect key="frame" x="111" y="583" width="96" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="jIL-Tw-DPm">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="VcJ-qa-0r1">
+                                                    <rect key="frame" x="15" y="548" width="35" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Age :" id="oBt-F8-gcr">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField focusRingType="none" verticalHuggingPriority="750" id="Nnj-Q5-So5">
+                                                    <rect key="frame" x="111" y="543" width="96" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="W4J-Is-mu7">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verticalHuggingPriority="750" id="tV1-aj-mPh">
+                                                    <rect key="frame" x="3" y="479" width="75" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Create" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eRV-bl-aYp">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="tV1-aj-mPh" secondAttribute="height" multiplier="61:20" id="yUN-ND-F2i"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="CreateUserbtn:" target="XfG-lQ-9wD" id="wIk-qn-RMZ"/>
+                                                    </connections>
+                                                </button>
+                                                <button verticalHuggingPriority="750" id="tAI-qu-KZr">
+                                                    <rect key="frame" x="93" y="479" width="99" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Delete last" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jBO-bX-l44">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="tAI-qu-KZr" secondAttribute="height" multiplier="61:20" id="D9o-GJ-qUI"/>
+                                                        <constraint firstAttribute="width" secondItem="tAI-qu-KZr" secondAttribute="height" multiplier="61:20" id="FdX-VG-XQf"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="DeleteLastbtn:" target="XfG-lQ-9wD" id="IbZ-AL-ZQA"/>
+                                                    </connections>
+                                                </button>
+                                                <button verticalHuggingPriority="750" id="FTH-6h-P0E">
+                                                    <rect key="frame" x="207" y="479" width="69" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5az-fG-18s">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="FTH-6h-P0E" secondAttribute="height" multiplier="61:20" id="1qz-2u-Fmv"/>
+                                                        <constraint firstAttribute="width" secondItem="FTH-6h-P0E" secondAttribute="height" multiplier="61:20" id="FGc-p1-pyc"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="Clearbtn:" target="XfG-lQ-9wD" id="EpW-la-eMB"/>
+                                                    </connections>
+                                                </button>
+                                                <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="E5h-bu-jZj">
+                                                    <rect key="frame" x="310" y="486" width="237" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="UhK-1Y-xP8">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Item 4" identifier="" id="PD2-E3-2TT">
+                                        <view key="view" id="4r5-8L-kbU">
+                                            <rect key="frame" x="10" y="33" width="564" height="665"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Item 5" identifier="" id="d9Z-5A-PgY">
+                                        <view key="view" id="TD8-1T-eLa">
+                                            <rect key="frame" x="10" y="33" width="564" height="665"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Item 6" identifier="" id="kEw-eW-0Hy">
+                                        <view key="view" id="lH4-5k-kRa">
+                                            <rect key="frame" x="10" y="33" width="564" height="665"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="AgeInput" destination="Nnj-Q5-So5" id="Pwm-ex-GDN"/>
+                        <outlet property="Content" destination="E5h-bu-jZj" id="VET-84-POH"/>
+                        <outlet property="CreateUserbtn" destination="tV1-aj-mPh" id="1Qg-fb-jIU"/>
+                        <outlet property="FnInput" destination="hSf-nB-QDa" id="U1q-Tm-6nW"/>
+                        <outlet property="LnInput" destination="cjd-ed-OUE" id="cEr-UP-V93"/>
+                        <outlet property="containerView" destination="sMQ-OZ-SGH" id="z1W-Oi-fsz"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.5" y="888"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gAr-Hl-NA7">
+            <objects>
+                <viewController id="zao-7s-e0a" sceneMemberID="viewController">
+                    <view key="view" id="An9-PL-mIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="poc-tg-B50">
+                                <rect key="frame" x="18" y="119" width="121" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Versions Available :" id="uHE-c2-sPK">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="oSv-rp-TEA">
+                                <rect key="frame" x="226" y="82" width="44" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="ver ?.?" id="av9-7Z-hNR">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator fixedFrame="YES" maxValue="100" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="W9X-2r-rNG">
+                                <rect key="frame" x="20" y="62" width="299" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <button verticalHuggingPriority="750" id="HEg-zu-459">
+                                <rect key="frame" x="99" y="22" width="153" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Download Wineskin" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QHW-Hs-4pp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="Downloadbtn:" target="RRt-RA-xTC" id="Rkc-90-1N4"/>
+                                </connections>
+                            </button>
+                            <comboBox focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9g-rJ-hsy">
+                                <rect key="frame" x="183" y="115" width="127" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" placeholderString="Select version" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="5" id="nOk-bT-PK5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </comboBoxCell>
+                            </comboBox>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xqj-vE-Ezl">
+                                <rect key="frame" x="54" y="165" width="217" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" imageFrameStyle="photo" image="GPTKLogo" id="fwr-Kk-1Zo"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="Downloadbtn" destination="HEg-zu-459" id="gBL-Wc-uI2"/>
+                        <outlet property="Dwnbtn" destination="HEg-zu-459" id="znH-oU-Fne"/>
+                        <outlet property="Pbar" destination="W9X-2r-rNG" id="7C7-tr-AvV"/>
+                    </connections>
+                </viewController>
+                <customObject id="XaA-Ky-WQ3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742.5" y="758"/>
+        </scene>
+        <!--Wineskin Winery-->
+        <scene sceneID="l9M-mi-vhY">
+            <objects>
+                <viewController title="Wineskin Winery" id="2QT-pR-WVn" customClass="WineskinController" customModule="MacTools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsToBounds="NO" wantsLayer="YES" id="zGr-sT-IkR">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="T3f-eI-lcx">
+                                <rect key="frame" x="6" y="73" width="155" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Latest Version Available :" id="u8Q-tc-f2Y">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9Cd-1O-uqb">
+                                <rect key="frame" x="256" y="73" width="44" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="ver ?.?" id="Ph1-j1-b8n">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator fixedFrame="YES" maxValue="100" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="o6S-Dv-Aym">
+                                <rect key="frame" x="8" y="53" width="299" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QaI-aq-x0Q">
+                                <rect key="frame" x="0.0" y="103" width="327" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="Logo" id="mob-cr-u2z"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" id="Us6-KG-jNf">
+                                <rect key="frame" x="87" y="13" width="153" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Download Wineskin" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dlh-5N-DVY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Us6-KG-jNf" secondAttribute="height" multiplier="61:20" id="LDB-nj-WIS"/>
+                                    <constraint firstAttribute="width" secondItem="Us6-KG-jNf" secondAttribute="height" multiplier="61:20" id="ikY-TR-7uI"/>
+                                    <constraint firstAttribute="width" secondItem="Us6-KG-jNf" secondAttribute="height" multiplier="61:20" id="jGA-JP-iGY"/>
+                                    <constraint firstAttribute="width" secondItem="Us6-KG-jNf" secondAttribute="height" multiplier="61:20" id="yOR-yZ-BD9"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="Downloadbtn:" target="2QT-pR-WVn" id="mc1-Ma-8Jl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="Downloadbtn" destination="Us6-KG-jNf" id="AZn-iQ-h9G"/>
+                        <outlet property="Pbar" destination="o6S-Dv-Aym" id="0qd-gs-kJe"/>
+                    </connections>
+                </viewController>
+                <customObject id="m96-vm-AQP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="1468"/>
+        </scene>
+        <!--Wineskin Winery-->
+        <scene sceneID="rss-h7-ImE">
+            <objects>
+                <viewController title="Wineskin Winery" id="bpV-8Y-EdF" customClass="WineskinController" customModule="MacTools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsToBounds="NO" wantsLayer="YES" id="fBS-nS-1Wz">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="jTG-nd-Pv6">
+                                <rect key="frame" x="6" y="73" width="155" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Latest Version Available :" id="fJo-3a-PfO">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="m04-Ob-trE">
+                                <rect key="frame" x="276" y="7" width="44" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" placeholderString="ver ?.?" id="ky3-IB-9Fh">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator fixedFrame="YES" maxValue="100" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="stW-BH-mrY">
+                                <rect key="frame" x="8" y="53" width="299" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATr-I0-eJo">
+                                <rect key="frame" x="0.0" y="103" width="327" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="Logo" id="Xg4-eq-q6n"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" id="Icr-Ug-O05">
+                                <rect key="frame" x="87" y="13" width="153" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Download Wineskin" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CN3-8K-ISh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="Downloadbtn:" target="bpV-8Y-EdF" id="hUg-ee-tCQ"/>
+                                </connections>
+                            </button>
+                            <comboBox focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edx-kL-sZr">
+                                <rect key="frame" x="191" y="68" width="99" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="Yl4-Ap-fnl">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>Item 1</string>
+                                        <string>Item 2</string>
+                                        <string>Item 3</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="Downloadbtn" destination="Icr-Ug-O05" id="Pat-0C-Edc"/>
+                        <outlet property="Pbar" destination="stW-BH-mrY" id="RXU-2s-SHa"/>
+                        <outlet property="Verselector" destination="Yl4-Ap-fnl" id="CXP-HX-cgz"/>
+                    </connections>
+                </viewController>
+                <customObject id="cfN-CA-c9t" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.5" y="1468"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GPTKLogo" width="1246" height="834"/>
+        <image name="Logo" width="416" height="114"/>
+        <image name="Wine1" width="224" height="224"/>
+        <image name="game-porting-toolkit-2-128x128_2x" width="256" height="256"/>
+    </resources>
+</document>
